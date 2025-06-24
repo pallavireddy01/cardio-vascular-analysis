@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cardio Risk Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h2>Cardio Risk Prediction</h2>
+   <form action="/predict" method="post">
+    Age: <input name="age" placeholder="e.g., 50"><br>
+    Gender (1=Male, 2=Female): <input name="gender" placeholder="1 or 2"><br>
+    Height (cm): <input name="height" placeholder="e.g., 165"><br>
+    Weight (kg): <input name="weight" placeholder="e.g., 70"><br>
+
+    <label>Systolic Blood Pressure (ap_hi):</label>
+    <input name="ap_hi" placeholder="e.g., 120"><br>
+
+    <label>Diastolic Blood Pressure (ap_lo):</label>
+    <input name="ap_lo" placeholder="e.g., 80"><br>
+
+    Cholesterol (1=Normal, 2=Above Normal, 3=Well Above Normal): <input name="cholesterol"><br>
+    Glucose (1=Normal, 2=Above Normal, 3=Well Above Normal): <input name="gluc"><br>
+    Smoke (0=No, 1=Yes): <input name="smoke"><br>
+    Alcohol (0=No, 1=Yes): <input name="alco"><br>
+    Active (0=No, 1=Yes): <input name="active"><br>
+
+    <button type="submit">Predict</button>
+</form>
+
+
+    {% if prediction %}
+        <h3>Prediction: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>

@@ -20,7 +20,7 @@ This project aims to analyze cardiovascular disease data and build a machine lea
 
 ## 🗂️ Dataset
 
-- Source: [Kaggle / UCI Repository / Custom dataset]
+- Source: [Kaggle - Cardiovascular Disease dataset ]
 - Features: Age, Gender, Blood Pressure, Cholesterol, Glucose Level, Smoking, Alcohol, Physical Activity, etc.
 - Target: Presence (1) or absence (0) of cardiovascular disease.
 
@@ -45,14 +45,6 @@ This project aims to analyze cardiovascular disease data and build a machine lea
   - Precision
   - Recall
   - F1-score
-  - ROC-AUC Curve
-
-## ✅ Results
-
-- Best performing model: **[Model name]**
-- Accuracy: **[XX]%**
-- Validation Accuracy: **[XX]%**
-- Confusion matrix and ROC-AUC curve indicate reliable predictions.
 
 ## 🖼️ Visualizations
 
@@ -67,5 +59,4 @@ This project aims to analyze cardiovascular disease data and build a machine lea
 - Enhance prediction with deep learning (e.g., neural networks).
 - Perform time-series analysis for patient monitoring.
 
-## 📁 Folder Structure
 
